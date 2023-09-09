@@ -55,6 +55,13 @@ export const portfolio: Record<string, PortfolioItem> = {
     url: "https://blend-io.web.app/",
     tags: ["react", "typescript", "firebase", "game"],
   },
+  cube: {
+    id: "cube",
+    name: "Cube Solver",
+    description: "A Rubik's cube solver",
+    github: "https://github.com/manas-verma/RubiksCubeSolver",
+    tags: ["python", "rubik's", "cube"],
+  },
   portfolio: {
     id: "portfolio",
     name: "Portfolio",

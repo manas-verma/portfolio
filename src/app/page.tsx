@@ -47,7 +47,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillCalendar /> Schedule
+            <AiFillCalendar /> schedule
           </a>
         </div>
       </div>
