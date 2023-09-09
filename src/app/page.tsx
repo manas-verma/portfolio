@@ -4,6 +4,7 @@ import { portfolio } from "@/portfolio/portfolio";
 import { music } from "@/portfolio/music";
 import { MusicCard } from "@/components/MusicCard";
 import { AboutMeSection } from "@/components/AboutMeSection";
+import { AiFillCalendar } from "react-icons/ai";
 
 export default function Home() {
   const portfolioCards = () => {
@@ -31,12 +32,22 @@ export default function Home() {
             <Image
               className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
               src="/mv.svg"
-              alt="Next.js Logo"
+              alt="MV"
               width={50}
               height={50}
               priority
             />
             <div className="ml-0">resume</div>
+          </a>
+        </div>
+        <div>
+          <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://calendly.com/manas-verma"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillCalendar /> Schedule
           </a>
         </div>
       </div>
@@ -45,7 +56,7 @@ export default function Home() {
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/logo.svg"
-          alt="Next.js Logo"
+          alt="MV"
           width={500}
           height={120}
           priority
