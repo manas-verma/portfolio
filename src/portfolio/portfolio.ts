@@ -62,6 +62,20 @@ export const portfolio: Record<string, PortfolioItem> = {
     github: "https://github.com/manas-verma/RubiksCubeSolver",
     tags: ["python", "rubik's", "cube"],
   },
+  lucidity: {
+    id: "lucidity",
+    name: "Lucidity",
+    description: "A web app for helping with psychedelic pre-coaching",
+    url: "https://lucidity.vercel.app/",
+    tags: [
+      "python",
+      "fastapi",
+      "react",
+      "typescript",
+      "psychedelic",
+      "firestore",
+    ],
+  },
   portfolio: {
     id: "portfolio",
     name: "Portfolio",
