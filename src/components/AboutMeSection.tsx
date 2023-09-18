@@ -13,6 +13,31 @@ export function AboutMeSection() {
     });
   };
 
+  const workWithMe = () => {
+    return (
+      <p className="text-lg text-gray-600 dark:text-gray-400">
+        If you would like, you can{" "}
+        <a
+          className="rounded-lg shadow-md bg-accent-dark text-primary-light font-semibold px-4 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50"
+          href="https://www.upwork.com/freelancers/~018a3d03b2a2898363"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Work With Me
+        </a>
+        {` or `}
+        <a
+          className="rounded-lg shadow-md bg-accent-dark text-primary-light font-semibold px-4 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50"
+          href="https://calendly.com/manas-verma"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Book Appointment
+        </a>
+      </p>
+    );
+  };
+
   const skillsList = () => {
     return skills.map((skill, index) => {
       return <li key={index}>{skill}</li>;
@@ -36,7 +61,11 @@ export function AboutMeSection() {
             priority
           />
         </div>
-        <div className="md:w-2/3 mt-4 md:mt-0 space-y-4">{description()}</div>
+        <div className="md:w-2/3 mt-4 md:mt-0 space-y-4">
+          {description()}
+          <br />
+          {workWithMe()}
+        </div>
       </div>
       <div className="mt-8">
         <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
