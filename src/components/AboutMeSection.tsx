@@ -19,7 +19,7 @@ export function AboutMeSection() {
         If you would like, you can{" "}
         <a
           className="rounded-lg shadow-md bg-accent-dark text-primary-light font-semibold px-4 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50"
-          href="https://www.upwork.com/freelancers/~018a3d03b2a2898363"
+          href="https://www.upwork.com/workwith/manasv3"
           target="_blank"
           rel="noopener noreferrer"
         >
