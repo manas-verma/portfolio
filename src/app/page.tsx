@@ -2,9 +2,11 @@ import Image from "next/image";
 import { PortfolioCard } from "@/components/PortfolioCard";
 import { portfolio } from "@/portfolio/portfolio";
 import { music } from "@/portfolio/music";
+import { reading } from "@/portfolio/reading";
 import { MusicCard } from "@/components/MusicCard";
 import { AboutMeSection } from "@/components/AboutMeSection";
 import { AiFillCalendar } from "react-icons/ai";
+import Reading from "@/components/Reading";
 
 export default function Home() {
   const portfolioCards = () => {
@@ -16,6 +18,12 @@ export default function Home() {
   const musicCards = () => {
     return Object.values(music).map((musicItem) => {
       return <MusicCard music={musicItem} key={musicItem.id} />;
+    });
+  };
+
+  const readingCards = () => {
+    return Object.values(reading).map((readingItem) => {
+      return <Reading reading={readingItem} key={readingItem.id} />;
     });
   };
 
@@ -74,6 +82,12 @@ export default function Home() {
       </div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         {musicCards()}
+      </div>
+      <div className="flex flex-row w-[1000px]">
+        <div className="text-3xl font-bold mb-4 ml-4 w-[100px]">Books I Recommend</div>
+      </div>
+      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+        {readingCards()}
       </div>
       <AboutMeSection />
     </main>

@@ -15,3 +15,10 @@ export type MusicItem = {
   name: string;
   url: `https://${string}`;
 };
+
+export type ReadingItem = {
+  id: string;
+  url: string;
+  name: string;
+  tier?: "S" | "A" | "B" | "C";
+};
