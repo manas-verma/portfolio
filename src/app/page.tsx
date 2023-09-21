@@ -71,20 +71,20 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex flex-row w-[1000px]">
-        <div className="text-3xl font-bold mb-4 ml-4 w-[100px]">Projects</div>
+      <div className="flex flex-row w-3/4">
+        <div className="text-4xl font-bold mb-4 ml-4 w-1/3">Projects</div>
       </div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         {portfolioCards()}
       </div>
-      <div className="flex flex-row w-[1000px]">
-        <div className="text-3xl font-bold mb-4 ml-4 w-[100px]">Music</div>
+      <div className="flex flex-row w-3/4">
+        <div className="text-4xl font-bold mb-4 ml-4 w-1/3">Music</div>
       </div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         {musicCards()}
       </div>
-      <div className="flex flex-row w-[1000px]">
-        <div className="text-3xl font-bold mb-4 ml-4 w-[300px]">Books I Recommend</div>
+      <div className="flex flex-row w-3/4">
+        <div className="text-4xl font-bold mb-4 ml-4 w-2/3">Books I Recommend</div>
       </div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         {readingCards()}

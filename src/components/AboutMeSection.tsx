@@ -15,10 +15,10 @@ export function AboutMeSection() {
 
   const workWithMe = () => {
     return (
-      <p className="text-lg text-gray-600 dark:text-gray-400">
+      <p className="text-lg text-gray-600 dark:text-gray-400 w-full">
         If you would like, you can{" "}
         <a
-          className="rounded-lg shadow-md bg-accent-dark text-primary-light font-semibold px-4 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50"
+          className="rounded-lg shadow-md bg-accent-dark text-primary-light font-semibold px-4 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50 w-full"
           href="https://www.upwork.com/workwith/manasv3"
           target="_blank"
           rel="noopener noreferrer"
@@ -27,12 +27,12 @@ export function AboutMeSection() {
         </a>
         {` or `}
         <a
-          className="rounded-lg shadow-md bg-accent-dark text-primary-light font-semibold px-4 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50"
+          className="rounded-lg shadow-md bg-accent-dark text-primary-light font-semibold px-4 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50 w-full sm:py-6"
           href="https://calendly.com/manas-verma"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Book Appointment
+          Book Time
         </a>
       </p>
     );
@@ -47,7 +47,7 @@ export function AboutMeSection() {
   return (
     <div>
       <hr />
-      <h2 className="text-3xl font-semibold text-gray-800 dark:text-white m-4">
+      <h2 className="text-4xl font-semibold text-gray-800 dark:text-white m-4">
         About Me
       </h2>
       <div className="flex flex-col md:flex-row">
@@ -61,7 +61,7 @@ export function AboutMeSection() {
             priority
           />
         </div>
-        <div className="md:w-2/3 mt-4 md:mt-0 space-y-4">
+        <div className="md:w-3/4 mt-4 md:mt-0 space-y-4">
           {description()}
           <br />
           {workWithMe()}
