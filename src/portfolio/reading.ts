@@ -4,7 +4,9 @@ export const reading: ReadingItem[] = [
   {
     id: "creativity-inc",
     tier: "S",
-    url: "//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=manasverma0e-20&language=en_US&marketplace=amazon&region=US&placement=B0BPF121ZJ&asins=B0BPF121ZJ&linkId=c9f6151065f06b9f161e2b6d84a41790&show_border=true&link_opens_in_new_window=true",
+    url: "https://www.amazon.com/Creativity-Inc-Expanded-Overcoming-Inspiration/dp/B0BPF121ZJ?_encoding=UTF8&qid=1695260727&sr=8-1&linkCode=li2&tag=manasverma0e-20&linkId=7cf8b9cbe1ea75000477cf35ba97598f&language=en_US&ref_=as_li_ss_il",
+    image:
+      "http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0BPF121ZJ&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=manasverma0e-20&language=en_US",
     name: "Creativity Inc.",
   },
 ];

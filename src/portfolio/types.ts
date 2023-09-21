@@ -20,5 +20,6 @@ export type ReadingItem = {
   id: string;
   url: string;
   name: string;
+  image: string;
   tier?: "S" | "A" | "B" | "C";
 };
