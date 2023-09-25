@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { PortfolioCard } from "@/components/PortfolioCard";
-import { portfolio } from "@/portfolio/portfolio";
+import { portfolio, latestProjectUrl } from "@/portfolio/portfolio";
 import { music } from "@/portfolio/music";
 import { reading } from "@/portfolio/reading";
 import { MusicCard } from "@/components/MusicCard";
 import { AboutMeSection } from "@/components/AboutMeSection";
 import { AiFillCalendar } from "react-icons/ai";
 import Reading from "@/components/Reading";
+import Link from "next/link";
 
 export default function Home() {
   const portfolioCards = () => {
@@ -70,6 +71,12 @@ export default function Home() {
           priority
         />
       </div>
+      <Link
+        href={latestProjectUrl}
+        className="relative overflow-hidden rounded-lg bg-white text-black shadow-md text-primary-light font-semibold px-8 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50"
+      >
+        Latest Project
+      </Link>
 
       <div className="flex flex-row w-3/4">
         <div className="text-4xl font-bold mb-4 ml-4 w-1/3">Projects</div>
@@ -84,7 +91,9 @@ export default function Home() {
         {musicCards()}
       </div>
       <div className="flex flex-row w-3/4">
-        <div className="text-4xl font-bold mb-4 ml-4 w-2/3">Books I Recommend</div>
+        <div className="text-4xl font-bold mb-4 ml-4 w-2/3">
+          Books I Recommend
+        </div>
       </div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         {readingCards()}

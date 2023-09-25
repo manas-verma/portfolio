@@ -1,11 +1,13 @@
 import type { PortfolioItem } from "./types";
 
+export const latestProjectUrl = "https://inmeme.app";
+
 export const portfolio: Record<string, PortfolioItem> = {
   inmeme: {
     id: "inmeme",
     name: "inmeme",
     description: "An internal meme page for you company!",
-    url: "https://inmeme.vercel.app",
+    url: "https://inmeme.app",
     tags: ["react", "firebase", "python"],
   },
   ruspy: {
