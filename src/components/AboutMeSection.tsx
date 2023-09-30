@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { aboutMe, skills } from "@/portfolio/about-me";
+import Link from "next/link";
 
 export function AboutMeSection() {
   const description = () => {
@@ -65,6 +66,12 @@ export function AboutMeSection() {
           {description()}
           <br />
           {workWithMe()}
+          <br />
+          <p className="text-lg text-gray-600 dark:text-gray-400 w-full">
+            <Link href="/transcript.pdf">
+              Check out my transcript here
+            </Link>
+          </p>
         </div>
       </div>
       <div className="mt-8">
