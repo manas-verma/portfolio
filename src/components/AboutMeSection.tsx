@@ -3,6 +3,8 @@ import React from "react";
 import { aboutMe, skills } from "@/portfolio/about-me";
 import Link from "next/link";
 
+const kumospaceUrl = "https://kumospace.com/manas-verma";
+
 export function AboutMeSection() {
   const description = () => {
     return aboutMe.map((paragraph, index) => {
@@ -68,10 +70,15 @@ export function AboutMeSection() {
           {workWithMe()}
           <br />
           <p className="text-lg text-gray-600 dark:text-gray-400 w-full">
-            <Link href="/transcript.pdf">
-              Check out my transcript here
-            </Link>
+            <Link href="/transcript.pdf">Check out my transcript here</Link>
           </p>
+          <br />
+          <Link
+            href={kumospaceUrl}
+            className="relative overflow-hidden rounded-lg bg-white text-black shadow-md text-primary-light font-semibold px-8 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50"
+          >
+            Drop By Virtual Office!
+          </Link>
         </div>
       </div>
       <div className="mt-8">
