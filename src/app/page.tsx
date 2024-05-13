@@ -1,13 +1,13 @@
-import Image from "next/image";
-import { PortfolioCard } from "@/components/PortfolioCard";
-import { portfolio, latestProjectUrl } from "@/portfolio/portfolio";
-import { music } from "@/portfolio/music";
-import { reading } from "@/portfolio/reading";
-import { MusicCard } from "@/components/MusicCard";
 import { AboutMeSection } from "@/components/AboutMeSection";
-import { AiFillCalendar } from "react-icons/ai";
+import { MusicCard } from "@/components/MusicCard";
+import { PortfolioCard } from "@/components/PortfolioCard";
 import Reading from "@/components/Reading";
+import { music } from "@/portfolio/music";
+import { portfolio } from "@/portfolio/portfolio";
+import { reading } from "@/portfolio/reading";
+import Image from "next/image";
 import Link from "next/link";
+import { AiFillCalendar } from "react-icons/ai";
 
 export default function Home() {
   const portfolioCards = () => {
@@ -71,13 +71,13 @@ export default function Home() {
           priority
         />
       </div>
-      <Link
-        href={latestProjectUrl}
-        className="relative overflow-hidden rounded-lg bg-white text-black shadow-md text-primary-light font-semibold px-8 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50"
-      >
-        Latest Project
-      </Link>
 
+      <div className="flex flex-row w-3/4">
+        Technical Co-founder at&nbsp;
+        <Link href="https://docs.wattshift.com/" className="font-bold">
+          WattShift
+        </Link>
+      </div>
       <div className="flex flex-row w-3/4">
         <div className="text-4xl font-bold mb-4 ml-4 w-1/3">Projects</div>
       </div>

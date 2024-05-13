@@ -1,6 +1,6 @@
 import type { PortfolioItem } from "./types";
 
-export const latestProjectUrl = "https://inmeme.app";
+export const latestProjectUrl = "https://docs.wattshift.com/";
 
 export const portfolio: Record<string, PortfolioItem> = {
   inmeme: {

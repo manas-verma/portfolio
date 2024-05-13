@@ -1,6 +1,5 @@
-import Image from "next/image";
-import React from "react";
 import { aboutMe, skills } from "@/portfolio/about-me";
+import Image from "next/image";
 import Link from "next/link";
 
 const kumospaceUrl = "https://kumospace.com/manas-verma";
@@ -20,15 +19,6 @@ export function AboutMeSection() {
     return (
       <p className="text-lg text-gray-600 dark:text-gray-400 w-full">
         If you would like, you can{" "}
-        <a
-          className="rounded-lg shadow-md bg-accent-dark text-primary-light font-semibold px-4 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50 w-full"
-          href="https://www.upwork.com/workwith/manasv3"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Work With Me
-        </a>
-        {` or `}
         <a
           className="rounded-lg shadow-md bg-accent-dark text-primary-light font-semibold px-4 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50 w-full sm:py-6"
           href="https://calendly.com/manas-verma"
@@ -72,13 +62,6 @@ export function AboutMeSection() {
           <p className="text-lg text-gray-600 dark:text-gray-400 w-full">
             <Link href="/transcript.pdf">Check out my transcript here</Link>
           </p>
-          <br />
-          <Link
-            href={kumospaceUrl}
-            className="relative overflow-hidden rounded-lg bg-white text-black shadow-md text-primary-light font-semibold px-8 py-4 transform transition-all hover:bg-accent-lighter hover:scale-105 focus:outline-none focus:ring focus:ring-accent focus:ring-opacity-50"
-          >
-            Drop By Virtual Office!
-          </Link>
         </div>
       </div>
       <div className="mt-8">
