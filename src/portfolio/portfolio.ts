@@ -5,7 +5,7 @@ export const latestProjectUrl = "https://docs.wattshift.com/";
 export const portfolio: Record<string, PortfolioItem> = {
   wattshift: {
     id: "wattshift",
-    name: "Wattshift",
+    name: "WattShift",
     description:
       "WattShift provides a developer-friendly API to help you optimize your device’s energy consumption against electric grid incentive schemes",
     url: "https://docs.wattshift.com",
