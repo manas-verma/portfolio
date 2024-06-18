@@ -14,7 +14,7 @@ export const portfolio: Record<string, PortfolioItem> = {
   inmeme: {
     id: "inmeme",
     name: "inmeme",
-    description: "An internal meme page for you company!",
+    description: "An internal meme page for your company!",
     url: "https://inmeme.app",
     tags: ["react", "firebase", "python"],
   },
